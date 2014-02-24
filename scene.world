@@ -1,0 +1,35 @@
+# Please respect this following format:
+# required:
+# 		camera (x,y,z) (a,b,c)
+# 			where x, y, z correspond to the position
+# 			and a, b, c correspond to the orientation's vector.
+# 		background ABCDEFGH I
+# 			where ABCDEFGH is the background's color in hexadecimal
+# 			and I is the intensity of ambient light.
+# optional:
+# 		sphere (x,y,z) R ABCDEFGH D S P
+# 			where x, y, z correspond to the position, R is the radius,
+# 			ABCDEFGH is the color in hexadecimal, D is the diffuse coef (0->100),
+# 			S is the specular coef (0->100) and P the phong's coeff (1->10000).
+# 		cylinder (x,y,z) (a,b,c) R ABCDEFGH D S P
+# 			where x, y, z correspond to the position, a, b, c correspond to the
+# 			orientation's vector, R is the radius,
+# 			ABCDEFGH is the color in hexadecimal, D is the diffuse coef (0->100),
+# 			S is the specular coef (0->100) and P the phong's coeff (1->10000).
+# 		plan (x,y,z) (a,b,c) (d,e,f) ABCDEFGH D S P
+# 			where x, y, z correspond to the position, a, b, c correspond to the
+# 			orientation's vector, same thing for d, e, f, ABCDEFGH is the color 
+# 			in hexadecimal, D is the diffuse coef (0->100),
+# 			S is the specular coef (0->100) and P the phong's coeff (1->10000).
+# 		light (x,y,z) ABCDEFGH I
+# 			where x, y, z correspond to the position, ABCDEFGH is the color
+# 			in hexadecimal and I is the light's intensity (0->100).
+
+camera (0,0,0) (0,10,1)
+background 00FF0000 20
+cylinder (-60,400,0) (0,700,0) 20  009800FF 50 50 200
+sphere (-30,400,100) 50 00F000FF 80 100 200
+sphere (-100,1000,100) 50 00FFFFFF 60 30 1000
+plan (0,0,-100) (0,1,0) (1,0,0) 00FFFF00 100 100 100 
+light (-100,80,0) 00FFFFFF 100
+light (500,-200,200) 00FFFFFF 100
