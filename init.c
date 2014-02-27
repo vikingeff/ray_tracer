@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brehaili <brehaili@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/03 14:47:37 by brehaili          #+#    #+#             */
-/*   Updated: 2014/02/03 14:47:39 by brehaili         ###   ########.fr       */
+/*   Updated: 2014/02/27 21:59:21 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ void	parse_file(t_env *env, char *str)
 
 	if ((fd = open(str, O_RDONLY)) == -1)
 	{
-		perror("");
+		//perror("");
 		exit(0);
 	}
 	while (get_next_line(fd, &line) != 0)

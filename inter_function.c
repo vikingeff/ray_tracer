@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   inter_function.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brehaili <brehaili@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/04 16:58:24 by brehaili          #+#    #+#             */
-/*   Updated: 2014/02/04 16:58:25 by brehaili         ###   ########.fr       */
+/*   Updated: 2014/02/27 22:00:32 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ t_point		plan_normal(t_list *list, t_point point)
 {
 	t_point		normal;
 
+	(void)point;
 	normal = vector_cross(list->ori2, list->ori);
 	normal = norm(normal);
 	return (normal);

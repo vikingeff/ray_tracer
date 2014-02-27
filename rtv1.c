@@ -6,7 +6,7 @@
 /*   By: brehaili <brehaili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/03 13:03:29 by brehaili          #+#    #+#             */
-/*   Updated: 2014/02/03 13:03:30 by brehaili         ###   ########.fr       */
+/*   Updated: 2014/02/27 21:52:48 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int		is_obstacle(t_line line, t_list *me, t_env *env)
 int		one_ray(t_env *env, t_line line)
 {
 	t_list	*tmp;
-	t_fun	*object;
+	//t_fun	*object;
 	t_point	p;
 
 	tmp = env->object;

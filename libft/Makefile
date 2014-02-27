@@ -6,7 +6,7 @@
 #    By: brehaili <brehaili@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 13:08:06 by brehaili          #+#    #+#              #
-#    Updated: 2014/01/07 16:02:30 by brehaili         ###   ########.fr        #
+#    Updated: 2014/02/27 21:51:55 by gleger           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,9 +28,10 @@ all: $(NAME)
 $(NAME): $(SRC:.c=.o)
 	ar rc $(NAME) $^
 	ranlib $(NAME)
+	@echo "\033[1;32;m[Libft successfully created] \t\t\t\033[0m"
 
 %.o: %.c
-	gcc -c $^ -o $@ -Wall -Wextra -Werror -g
+	@gcc -c $^ -o $@ -Wall -Wextra -Werror -g -O3
 
 clean:
 	rm -rf $(SRC:.c=.o)

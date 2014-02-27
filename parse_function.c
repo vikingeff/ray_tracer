@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parse_function.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brehaili <brehaili@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/03 16:13:35 by brehaili          #+#    #+#             */
-/*   Updated: 2014/02/03 16:13:37 by brehaili         ###   ########.fr       */
+/*   Updated: 2014/02/27 21:59:48 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ extern t_fun	keyword[6];
 void	fill_camera(t_env *env, char **tab)
 {
 	char	**split;
-	double	norme;
+	//double	norme;
 
 	split = ft_strsplit(tab[1], ',');
 	env->cam_pos.x = ft_atoi(split[0] + 1);
