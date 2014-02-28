@@ -6,7 +6,7 @@
 #    By: brehaili <brehaili@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/02/13 19:23:12 by brehaili          #+#    #+#              #
-#    Updated: 2014/02/27 21:58:49 by gleger           ###   ########.fr        #
+#    Updated: 2014/03/01 00:28:54 by gleger           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ libft.a:
 	make -C libft
 
 %.o: %.c
-	gcc -g -c $^ -o $@ $(CCFLAG)
+	@gcc -g -c $^ -o $@ $(CCFLAG)
 
 clean:
 	rm -rf $(SRC:.c=.o)
